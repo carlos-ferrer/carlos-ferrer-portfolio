@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-playfair);
+  --font-mono: var(--font-jetbrains);
+  --font-body: var(--font-inter);
+
+  --color-background: #050505;
+  --color-foreground: #E0E0E0;
+}
+
+/* Custom Utilities for "Dark Luxury" */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+  overflow-x: hidden; /* Prevent horizontal scroll from 3D canvas */
+}
+
+/* Hide scrollbar for "Cinematic" feel (handled by Lenis usually, but good fallback) */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}

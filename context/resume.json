@@ -1,0 +1,140 @@
+{
+    "profile": {
+        "name": "Carlos Ferrer",
+        "role": "Desenvolvedor de Sistemas & Analista de Dados",
+        "tagline": "Resolvendo dores de negócios com código de alta performance e IA."
+    },
+    "projects": [
+        {
+            "id": "tfd-roteiros",
+            "title": "TFD: Gestão de Roteiros",
+            "description": "Módulo de agendamento e logística para Transporte Fora do Domicílio. Otimização de rotas e controle de pacientes.",
+            "tech": [
+                "Sistema Web",
+                "Gestão Logística"
+            ],
+            "image": "/assets/TFD Roteiros de Viagem.png",
+            "year": "2025"
+        },
+        {
+            "id": "tfd-bpa",
+            "title": "TFD: Automação BPA",
+            "description": "Módulo de faturamento que gera e exporta automaticamente os arquivos BPA (Boletim de Produção Ambulatorial) para o SUS.",
+            "tech": [
+                "Automação",
+                "Exportação de Dados"
+            ],
+            "image": "/assets/TFD Exportar BPA.png",
+            "year": "2025"
+        },
+        {
+            "id": "lista-regulacao",
+            "title": "Lista de Espera: Regulação",
+            "description": "Painel administrativo para gestão de filas, prioridades e aprovação de encaminhamentos médicos.",
+            "tech": [
+                "Painel Admin",
+                "React",
+                "Node.js"
+            ],
+            "image": "/assets/Lista de Espera Regulação.png",
+            "year": "2024"
+        },
+        {
+            "id": "lista-publica",
+            "title": "Lista de Espera: Portal do Cidadão",
+            "description": "Interface pública para transparência, onde cidadãos consultam sua posição na fila em tempo real.",
+            "tech": [
+                "Portal Público",
+                "Transparência"
+            ],
+            "image": "/assets/Lista de Espera.png",
+            "year": "2024"
+        }
+    ],
+    "skills": [
+        "Python",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "PostgreSQL",
+        "Automação",
+        "IA/LLMs",
+        "Scraping",
+        "Google Apps Script",
+        "Excel Avançado"
+    ],
+    "bio": "Transformo tarefas manuais e repetitivas em processos automáticos e eficientes. Especialista em salvar operações críticas através de código de alta performance.",
+    "testimonials": [
+        {
+            "id": "726841",
+            "client": "Leonardo V.",
+            "text": "Pessoa incrível muito atencioso, um dos melhores profissionais que já encontrei por aqui. Muito obrigado Carlos.",
+            "role": "IA Generativa Jurídica"
+        },
+        {
+            "id": "725229",
+            "client": "Jordana D.",
+            "text": "O Carlos foi excelente!! Resolveu em 2 dias um problema que 2 devs anteriores não conseguiram! Explica com detalhes tudo que faz. Com certeza vou realizar mais projetos com ele.",
+            "role": "E-commerce WooCommerce"
+        },
+        {
+            "id": "717711",
+            "client": "Bruno S.",
+            "text": "Muito bom o trabalho, realizou todos os ajustes necessários. Sistema rodando perfeitamente.",
+            "role": "Automação de Sistemas"
+        },
+        {
+            "id": "717384",
+            "client": "Luiz F.",
+            "text": "Carlos foi atencioso e disponível. Super recomendo. O projeto foi concluído conforme combinado. Recomendo para demandas de mensageria.",
+            "role": "Segurança Digital"
+        },
+        {
+            "id": "715265",
+            "client": "Agnaldo R.",
+            "text": "Profissional extremamente prestativo, organizado e eficiente. Demonstrou domínio técnico e cumpriu o prazo. Recomendo com tranquilidade.",
+            "role": "Truck Center Pneus"
+        },
+        {
+            "id": "714675",
+            "client": "Igor M.",
+            "text": "Um profissional extremamente dedicado, muito rápido e assertivo. Recomendo muito o trabalho do Carlos!",
+            "role": "Refatoração Web"
+        },
+        {
+            "id": "715110",
+            "client": "Vitor C.",
+            "text": "Seguiu corretamente o roteiro de testes, excelente trabalho.",
+            "role": "Chatbot Médico"
+        },
+        {
+            "id": "715101",
+            "client": "Felipe B.",
+            "text": "Extremamente capacitado, resolveu o problema do meu codigo java rapidinho. Vai que é sem erro.",
+            "role": "Bot WhatsApp Java"
+        },
+        {
+            "id": "714563",
+            "client": "Alan S.",
+            "text": "Carlos é um excelente profissional, tranquilo e muito bom no que faz. Atendeu perfeitamente o que eu precisava.",
+            "role": "Metricas & Ads"
+        }
+    ],
+    "services": [
+        {
+            "title": "Automação Inteligente",
+            "description": "Criação de robôs e scripts que eliminam tarefas manuais repetitivas, integrando planilhas, sistemas e APIs.",
+            "icon": "Bot"
+        },
+        {
+            "title": "Análise de Dados & BI",
+            "description": "Transformação de dados brutos em dashboards visuais para suporte à decisão estratégica.",
+            "icon": "Chart"
+        },
+        {
+            "title": "Sistemas Web Sob Medida",
+            "description": "Desenvolvimento full-stack de aplicações focadas em performance e resolução de problemas específicos.",
+            "icon": "Code"
+        }
+    ]
+}

@@ -66,15 +66,15 @@ export default function Hero() {
             </div>
 
             {/* Profile Image (Elegant/B&W) */}
-            <div className="absolute right-0 bottom-0 top-0 h-full w-full pointer-events-none z-0">
-                <div className="relative w-full h-full flex justify-end">
+            <div className="absolute right-0 bottom-0 h-[80vh] md:h-[90vh] w-full pointer-events-none z-0">
+                <div className="relative w-full h-full flex items-end justify-end">
                     <img
                         src="/assets/profile.jpg"
                         alt="Carlos Ferrer"
-                        className="h-full w-auto md:w-[60vw] object-cover object-center md:object-right opacity-0 animate-fade-in grayscale md:opacity-50"
+                        className="h-full w-auto md:max-w-[70vw] object-cover object-top opacity-0 animate-fade-in grayscale md:opacity-40"
                         style={{
-                            maskImage: 'linear-gradient(to left, black 40%, transparent 100%)',
-                            WebkitMaskImage: 'linear-gradient(to left, black 40%, transparent 100%)'
+                            maskImage: 'linear-gradient(to left, black 20%, transparent 100%)',
+                            WebkitMaskImage: 'linear-gradient(to left, black 20%, transparent 100%)'
                         }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent" />

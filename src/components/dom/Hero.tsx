@@ -45,9 +45,20 @@ export default function Hero() {
                     </div>
                 </h1>
 
-                <p ref={subtitleRef} className="text-sm md:text-xl font-mono text-neutral-500 max-w-xl uppercase tracking-widest mt-8 border-l border-neutral-800 pl-6">
-                    {resume.profile.tagline}
-                </p>
+                <div className="flex flex-col items-start gap-4 mt-8">
+                    <p ref={subtitleRef} className="text-sm md:text-xl font-mono text-neutral-500 max-w-xl uppercase tracking-widest border-l border-neutral-800 pl-6">
+                        {resume.profile.tagline}
+                    </p>
+
+                    <a
+                        href="https://wa.me/5567996894353?text=Ol%C3%A1%2C%20Carlos!%20Vim%20pelo%20seu%20portf%C3%B3lio."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-6 mt-4 px-6 py-3 bg-white text-black font-mono text-xs md:text-sm font-bold rounded-full hover:bg-green-400 transition-colors pointer-events-auto z-20"
+                    >
+                        INICIAR PROJETO
+                    </a>
+                </div>
 
                 <div className="absolute bottom-12 left-6 md:left-20 animate-bounce z-10">
                     <span className="font-mono text-xs text-neutral-600">ROLE PARA EXPLORAR</span>
@@ -55,15 +66,15 @@ export default function Hero() {
             </div>
 
             {/* Profile Image (Elegant/B&W) */}
-            <div className="absolute right-0 bottom-0 top-0 h-full w-full md:w-[45vw] pointer-events-none z-0">
-                <div className="relative w-full h-full">
+            <div className="absolute right-0 bottom-0 top-0 h-full w-full pointer-events-none z-0">
+                <div className="relative w-full h-full flex justify-end">
                     <img
                         src="/assets/profile.jpg"
                         alt="Carlos Ferrer"
-                        className="w-full h-full object-cover object-top opacity-0 animate-fade-in grayscale md:opacity-25"
+                        className="h-full w-auto md:w-[60vw] object-cover object-center md:object-right opacity-0 animate-fade-in grayscale md:opacity-50"
                         style={{
-                            maskImage: 'linear-gradient(to left, black 0%, transparent 60%)',
-                            WebkitMaskImage: 'linear-gradient(to left, black 0%, transparent 60%)'
+                            maskImage: 'linear-gradient(to left, black 40%, transparent 100%)',
+                            WebkitMaskImage: 'linear-gradient(to left, black 40%, transparent 100%)'
                         }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent" />

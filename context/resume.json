@@ -13,7 +13,7 @@
                 "Sistema Web",
                 "Gestão Logística"
             ],
-            "image": "/assets/TFD Roteiros de Viagem.png",
+            "image": "/assets/tfd-roteiros.png",
             "year": "2025"
         },
         {
@@ -24,7 +24,7 @@
                 "Automação",
                 "Exportação de Dados"
             ],
-            "image": "/assets/TFD Exportar BPA.png",
+            "image": "/assets/tfd-bpa.png",
             "year": "2025"
         },
         {
@@ -36,7 +36,7 @@
                 "React",
                 "Node.js"
             ],
-            "image": "/assets/Lista de Espera Regulação.png",
+            "image": "/assets/lista-espera-regulacao.png",
             "year": "2024"
         },
         {
@@ -47,7 +47,7 @@
                 "Portal Público",
                 "Transparência"
             ],
-            "image": "/assets/Lista de Espera.png",
+            "image": "/assets/lista-espera-portal.png",
             "year": "2024"
         }
     ],

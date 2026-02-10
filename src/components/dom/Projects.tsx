@@ -6,13 +6,13 @@ import { motion, useScroll, useTransform, useMotionValue } from 'framer-motion';
 
 export default function Projects() {
     return (
-        <section className="relative w-full py-32 px-6 md:px-20 bg-neutral-950">
+        <section className="relative w-full py-20 md:py-32 px-6 md:px-20 bg-neutral-950">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-4xl md:text-6xl font-display text-white mb-24 border-b border-white/10 pb-8">
+                <h2 className="text-4xl md:text-6xl font-display text-white mb-12 md:mb-24 border-b border-white/10 pb-8">
                     Projetos Selecionados
                 </h2>
 
-                <div className="flex flex-col gap-32">
+                <div className="flex flex-col gap-20 md:gap-32">
                     {/* @ts-ignore */}
                     {resume.projects.map((project, i) => (
                         <ProjectCard key={i} project={project} index={i} />

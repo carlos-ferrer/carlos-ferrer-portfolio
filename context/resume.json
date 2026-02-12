@@ -10,13 +10,13 @@
         {
             "id": "tfd-roteiros",
             "title": "TFD: Gestão de Roteiros",
-            "context": "A gestão logística de pacientes era feita manualmente, gerando erros de rota e falta de controle sobre quem viajava.",
-            "solution": "Sistema Web completo para agendamento e roteirização. Consolida solicitações e organiza passageiros por destino/veículo automaticamente.",
-            "impact": "Eliminação de erros de agendamento, otimização da ocupação dos veículos e controle total da operação em tempo real.",
-            "description": "Sistema Web completo para agendamento e roteirização. Consolida solicitações e organiza passageiros por destino/veículo automaticamente.",
+            "context": "Com o fim do contrato do software de saúde terceirizado, o transporte de pacientes correria o risco de voltar a ser controlado manualmente/papel.",
+            "solution": "Desenvolvi um sistema substituto sob medida, coliderado por um servidor da área, para garantir a continuidade da operação sem custos extras.",
+            "impact": "Evitou o colapso logístico pós-contrato e manteve o controle de pacientes sem interrupção.",
+            "description": "Sistema desenvolvido para substituir fornecedor externo e manter a logística de pacientes funcionando.",
             "tech": [
-                "Sistema Web",
-                "Gestão Logística"
+                "Sistema Crítico",
+                "Substituição de Vendor"
             ],
             "image": "/assets/tfd-roteiros.png",
             "year": "2025"
@@ -24,13 +24,13 @@
         {
             "id": "tfd-bpa",
             "title": "TFD: Automação BPA",
-            "context": "O faturamento para o SUS exigia a digitação manual de centenas de registros, um processo lento e sujeito a glosas (rejeições).",
-            "solution": "Módulo de automação que processa os dados dos atendimentos e gera os arquivos BPA magnéticos validados, prontos para importação no sistema do SUS.",
-            "impact": "Redução de dias de trabalho para minutos. Aumento da receita recuperada ao eliminar erros de digitação.",
-            "description": "Módulo de automação que processa os dados dos atendimentos e gera os arquivos BPA magnéticos validados.",
+            "context": "Durante a transição, o faturamento (BPA) do transporte ficou 100% manual, exigindo uma força-tarefa de 1 semana para fechar o mês.",
+            "solution": "Criei um módulo de exportação que processa os agendamentos e gera os arquivos oficiais do SUS automaticamente.",
+            "impact": "Reduziu o tempo de trabalho de 1 semana para apenas 1 dia e eliminou glosas por erro de digitação.",
+            "description": "Automação que reduziu o fechamento de faturamento de 1 semana para 1 dia.",
             "tech": [
                 "Automação",
-                "Exportação de Dados"
+                "Otimização: 80%"
             ],
             "image": "/assets/tfd-bpa.png",
             "year": "2025"

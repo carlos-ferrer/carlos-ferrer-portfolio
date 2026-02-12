@@ -56,7 +56,7 @@ export default function About() {
 
                     <div className="mt-12 p-6 border border-white/10 rounded-xl bg-white/5">
                         <p className="text-lg text-neutral-300 italic font-body">
-                            "{/* @ts-ignore */ resume.bio}"
+                            "{/* @ts-ignore */ resume.profile.bio}"
                         </p>
                     </div>
                 </div>

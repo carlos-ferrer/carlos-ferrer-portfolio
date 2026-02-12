@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import SplitText from './ui/SplitText';
 import resume from '../../../context/resume.json';
+import NextImage from 'next/image';
 
 export default function Hero() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -34,12 +35,12 @@ export default function Hero() {
     return (
         <section ref={containerRef} className="relative w-full h-screen flex flex-col justify-center px-6 md:px-20 z-10 pointer-events-none">
             <div className="max-w-7xl w-full mx-auto pointer-events-auto">
-                <h1 ref={titleRef} className="text-6xl md:text-[8rem] font-display font-bold leading-[0.9] tracking-tighter mix-blend-difference text-white mb-6">
+                <h1 ref={titleRef} className="text-4xl md:text-7xl font-display font-bold leading-[1.1] tracking-tighter mix-blend-difference text-white mb-6">
                     <div className="overflow-hidden">
-                        <SplitText charClass="gsap-char" className="block">{resume.profile.name}</SplitText>
+                        <SplitText charClass="gsap-char" className="block text-green-400">{resume.profile.headline}</SplitText>
                     </div>
                     <div className="overflow-hidden">
-                        <span className="text-4xl md:text-7xl font-light text-neutral-400 block mt-2">
+                        <span className="text-2xl md:text-4xl font-mono font-light text-neutral-400 block mt-4">
                             <SplitText charClass="gsap-char">{resume.profile.role}</SplitText>
                         </span>
                     </div>
@@ -68,10 +69,14 @@ export default function Hero() {
             {/* Profile Image (Elegant/B&W) */}
             <div className="absolute right-0 bottom-0 h-[85vh] md:h-[95vh] w-full pointer-events-none z-0">
                 <div className="relative w-full h-full flex items-end justify-end">
-                    <img
+                    <NextImage
                         src="/assets/profile.jpg"
                         alt="Carlos Ferrer"
-                        className="h-full w-auto md:max-w-[40vw] object-cover object-top opacity-0 animate-fade-in grayscale md:opacity-40"
+                        fill
+                        priority
+                        quality={100}
+                        sizes="(max-width: 768px) 100vw, 40vw"
+                        className="object-cover object-top opacity-0 animate-fade-in grayscale md:opacity-40"
                         style={{
                             maskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%), linear-gradient(to left, black 20%, transparent 100%)',
                             WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%), linear-gradient(to left, black 20%, transparent 100%)',

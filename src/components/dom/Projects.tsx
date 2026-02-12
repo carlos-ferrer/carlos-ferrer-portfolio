@@ -3,6 +3,7 @@
 import { useRef } from 'react';
 import resume from '../../../context/resume.json';
 import { motion, useScroll, useTransform, useMotionValue } from 'framer-motion';
+import NextImage from 'next/image';
 
 export default function Projects() {
     return (
@@ -66,11 +67,15 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
                 onMouseLeave={handleMouseLeave}
                 style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
             >
-                <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 aspect-video shadow-2xl transition-all duration-500 hover:shadow-green-900/20">
-                    <img
+                <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-2xl transition-all duration-500 hover:shadow-green-900/20">
+                    <NextImage
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-full object-cover transition-transform duration-700 ease-out transform group-hover:scale-105"
+                        width={1920}
+                        height={920}
+                        quality={100}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 50vw"
+                        className="w-full h-auto object-cover transition-transform duration-700 ease-out transform group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
                 </div>
@@ -86,9 +91,29 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
                     {project.title}
                 </h3>
 
-                <p className="text-lg text-neutral-400 font-light leading-relaxed mb-8">
-                    {project.description}
-                </p>
+                <div className="flex flex-col gap-6 mb-8">
+                    <div>
+                        <span className="text-green-400 font-mono text-xs uppercase tracking-widest">O Problema</span>
+                        <p className="text-neutral-300 font-light leading-relaxed mt-1">
+                            {/* @ts-ignore */}
+                            {project.context}
+                        </p>
+                    </div>
+                    <div>
+                        <span className="text-green-400 font-mono text-xs uppercase tracking-widest">A Solução</span>
+                        <p className="text-neutral-300 font-light leading-relaxed mt-1">
+                            {/* @ts-ignore */}
+                            {project.solution}
+                        </p>
+                    </div>
+                    <div>
+                        <span className="text-green-400 font-mono text-xs uppercase tracking-widest">O Impacto</span>
+                        <p className="text-white font-medium leading-relaxed mt-1">
+                            {/* @ts-ignore */}
+                            {project.impact}
+                        </p>
+                    </div>
+                </div>
 
                 <div className="flex flex-wrap gap-2">
                     {project.tech.map((t: string, k: number) => (

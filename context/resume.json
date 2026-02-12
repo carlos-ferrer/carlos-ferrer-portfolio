@@ -1,14 +1,19 @@
 {
     "profile": {
         "name": "Carlos Ferrer",
-        "role": "Desenvolvedor de Sistemas & Analista de Dados",
-        "tagline": "Resolvendo dores de negócios com código de alta performance e IA."
+        "role": "Desenvolvedor de Soluções & Analista de Negócios",
+        "headline": "Transformo Processos Caóticos em Sistemas Eficientes",
+        "tagline": "Crio ferramentas sob medida que eliminam trabalho manual, organizam operações e geram clareza para tomada de decisão.",
+        "bio": "Profissional híbrido com foco em Eficiência Operacional e Desenvolvimento de Software. Atuo na interseção entre negócio e tecnologia: diagnostico gargalos de processo e construo as soluções técnicas exatas para resolvê-los. Tenho experiência comprovada em transformar fluxos manuais em sistemas estruturados, automações e dashboards de decisão."
     },
     "projects": [
         {
             "id": "tfd-roteiros",
             "title": "TFD: Gestão de Roteiros",
-            "description": "Módulo de agendamento e logística para Transporte Fora do Domicílio. Otimização de rotas e controle de pacientes.",
+            "context": "A gestão logística de pacientes era feita manualmente, gerando erros de rota e falta de controle sobre quem viajava.",
+            "solution": "Sistema Web completo para agendamento e roteirização. Consolida solicitações e organiza passageiros por destino/veículo automaticamente.",
+            "impact": "Eliminação de erros de agendamento, otimização da ocupação dos veículos e controle total da operação em tempo real.",
+            "description": "Sistema Web completo para agendamento e roteirização. Consolida solicitações e organiza passageiros por destino/veículo automaticamente.",
             "tech": [
                 "Sistema Web",
                 "Gestão Logística"
@@ -19,7 +24,10 @@
         {
             "id": "tfd-bpa",
             "title": "TFD: Automação BPA",
-            "description": "Módulo de faturamento que gera e exporta automaticamente os arquivos BPA (Boletim de Produção Ambulatorial) para o SUS.",
+            "context": "O faturamento para o SUS exigia a digitação manual de centenas de registros, um processo lento e sujeito a glosas (rejeições).",
+            "solution": "Módulo de automação que processa os dados dos atendimentos e gera os arquivos BPA magnéticos validados, prontos para importação no sistema do SUS.",
+            "impact": "Redução de dias de trabalho para minutos. Aumento da receita recuperada ao eliminar erros de digitação.",
+            "description": "Módulo de automação que processa os dados dos atendimentos e gera os arquivos BPA magnéticos validados.",
             "tech": [
                 "Automação",
                 "Exportação de Dados"
@@ -30,6 +38,9 @@
         {
             "id": "lista-regulacao",
             "title": "Lista de Espera: Regulação",
+            "context": "Falta de transparência e organização nas filas de espera gerava pressão sobre a equipe interna e ineficiência.",
+            "solution": "Painel administrativo para gestão de filas, prioridades e aprovação de encaminhamentos médicos.",
+            "impact": "Organização centralizada da fila e agilidade na regulação de pacientes.",
             "description": "Painel administrativo para gestão de filas, prioridades e aprovação de encaminhamentos médicos.",
             "tech": [
                 "Painel Admin",
@@ -42,6 +53,9 @@
         {
             "id": "lista-publica",
             "title": "Lista de Espera: Portal do Cidadão",
+            "context": "A população não tinha acesso à sua posição na fila, gerando desconfiança e alto volume de atendimentos de balcão.",
+            "solution": "Interface pública para transparência, onde cidadãos consultam sua posição na fila em tempo real.",
+            "impact": "Transparência total para o cidadão e redução drástica no atendimento presencial para dúvidas simples.",
             "description": "Interface pública para transparência, onde cidadãos consultam sua posição na fila em tempo real.",
             "tech": [
                 "Portal Público",
@@ -52,18 +66,15 @@
         }
     ],
     "skills": [
-        "Python",
-        "JavaScript",
-        "React",
-        "Next.js",
+        "React & Node.js",
+        "Python & Automação",
         "PostgreSQL",
-        "Automação",
-        "IA/LLMs",
-        "Scraping",
+        "Dashboards & BI",
+        "Integração de Sistemas",
         "Google Apps Script",
-        "Excel Avançado"
+        "Modelagem de Dados",
+        "Web Scraping"
     ],
-    "bio": "Transformo tarefas manuais e repetitivas em processos automáticos e eficientes. Especialista em salvar operações críticas através de código de alta performance.",
     "testimonials": [
         {
             "id": "726841",
@@ -122,19 +133,19 @@
     ],
     "services": [
         {
-            "title": "Automação Inteligente",
-            "description": "Criação de robôs e scripts que eliminam tarefas manuais repetitivas, integrando planilhas, sistemas e APIs.",
+            "title": "Sistemas Internos",
+            "description": "Painéis administrativos e ferramentas sob medida para organizar operações e fluxos de trabalho.",
+            "icon": "Code"
+        },
+        {
+            "title": "Automação de Processos",
+            "description": "Scripts e robôs que eliminam tarefas repetitivas e integram sistemas desconectados (APIs, Planilhas).",
             "icon": "Bot"
         },
         {
-            "title": "Análise de Dados & BI",
+            "title": "Inteligência de Dados",
             "description": "Transformação de dados brutos em dashboards visuais para suporte à decisão estratégica.",
             "icon": "Chart"
-        },
-        {
-            "title": "Sistemas Web Sob Medida",
-            "description": "Desenvolvimento full-stack de aplicações focadas em performance e resolução de problemas específicos.",
-            "icon": "Code"
         }
     ]
 }

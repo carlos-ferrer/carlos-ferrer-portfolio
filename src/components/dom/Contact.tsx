@@ -22,7 +22,7 @@ export default function Contact() {
                     </a>
 
                     <button
-                        onClick={() => navigator.clipboard.writeText('contact@daniel.dev')}
+                        onClick={() => navigator.clipboard.writeText('carlosferrersandg@gmail.com')}
                         className="px-8 py-4 border border-white/20 hover:bg-white/10 text-white rounded-full transition-all duration-300 backdrop-blur-md"
                     >
                         Copiar Email
